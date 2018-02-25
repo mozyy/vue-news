@@ -86,6 +86,7 @@ export default {
 @small_height:1.96875rem; 
 @larger_height:4.6875rem; 
 .listItem{
+    height: 100%;
     li {
         margin: 0 0.4rem;
         border-bottom: 1px solid hsla(0, 0%, 87%, .6);
@@ -165,7 +166,7 @@ export default {
             margin-top: 0.16rem;
             ul {
                 width: 100%;
-                /*display: flex;*/
+                height: 100%;
                 font-size: 0;
             }
             li {

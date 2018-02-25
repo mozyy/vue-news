@@ -15,7 +15,8 @@
                 </keep-alive>
             </mt-tab-container-item>
             <mt-tab-container-item id="2">
-                <mt-cell v-for="(n,m) in 4" :key="m" :title="'content ' + n" />
+               <m-activity></m-activity>
+               <m-act></m-act>
             </mt-tab-container-item>
             <mt-tab-container-item id="3">
                 <mt-cell v-for="(n,m) in 10" :key="m" :title="'content ' + n" />
@@ -66,6 +67,8 @@ import mFooter from './components/index_footer'
 import swiperContainer from './components/swiperContainer'
 import mTabbar from '@/components/tabbar/tabbar'
 import mTabbarItem from '@/components/tabbar/tabbar_item'
+import mActivity from './activity'
+import mAct from './act'
 import { mapActions } from 'vuex'
 export default {
    data() {
@@ -81,7 +84,7 @@ export default {
             'get_indexColumn_data'
         ])
     },
-    components: { mHeader, mTabbar, mTabbarItem, mFooter, swiperContainer }
+    components: { mHeader, mTabbar, mTabbarItem, mFooter, swiperContainer, mActivity, mAct }
 }
 </script>
 <style lang='less'>
